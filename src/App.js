@@ -23,6 +23,7 @@ function App() {
   const [editTitle, setEditTitle] = useState('');
   const [editBody, setEditBody] = useState('');
   const navigate = useNavigate();
+
   const { data, fetchError, isLoading } = useAxiosFetch('http://localhost:3500/posts');
 
   useEffect(() => {
